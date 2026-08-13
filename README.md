@@ -3,7 +3,9 @@
 Static landing page for 5K Specialty Systems, a 5K Holdings company.
 
 No backend. Open `index.html` in a browser, or host the folder on any static
-host (Netlify, GitHub Pages, S3, etc.).
+host.
+
+**Live:** https://velkuraditya-ux.github.io/5K-Speciality-Systems/
 
 ## Files
 
