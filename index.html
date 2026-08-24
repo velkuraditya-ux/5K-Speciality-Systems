@@ -96,11 +96,11 @@
       box-shadow: 0 8px 30px rgba(0,0,0,0.35);
     }
     .header-inner { display: flex; align-items: center; justify-content: space-between; }
-    .logo img { height: 80px; width: auto; transition: height 500ms var(--ease); }
-    header.is-scrolled .logo img { height: 56px; }
+    .logo img { height: 56px; width: auto; transition: height 500ms var(--ease); }
+    header.is-scrolled .logo img { height: 44px; }
     @media (max-width: 639px) {
-      .logo img { height: 64px; }
-      header.is-scrolled .logo img { height: 48px; }
+      .logo img { height: 48px; }
+      header.is-scrolled .logo img { height: 40px; }
     }
 
     .nav-desktop { display: none; align-items: center; gap: 4px; }
@@ -511,7 +511,7 @@
     @media (min-width: 768px) {
       .footer-top { flex-direction: row; align-items: flex-start; justify-content: space-between; }
     }
-    footer .logo img { height: 64px; width: auto; }
+    footer .logo.footer-logo img { height: 120px; width: auto; max-width: 150px; }
     .tag { color: var(--brushed-silver); font-size: 14px; margin-top: 12px; }
     .footer-nav { display: flex; flex-wrap: wrap; gap: 8px 32px; }
     .footer-nav a {
@@ -549,7 +549,7 @@
   <header id="site-header">
     <div class="wrap header-inner">
       <a href="#top" class="logo">
-        <img src="logo/logo-white.png" alt="5K Specialty Systems - A 5K Holdings Company" />
+        <img src="logo/logo-header-white.svg" alt="5K Specialty Systems - A 5K Holdings Company" />
       </a>
       <nav class="nav-desktop" aria-label="Primary">
         <a href="#about">About<span></span></a>
@@ -570,7 +570,7 @@
     <div class="drawer-backdrop" id="menu-close"></div>
     <div class="drawer-panel" role="dialog" aria-label="Navigation">
       <div class="drawer-head">
-        <img src="logo/logo-white.png" alt="5K Specialty Systems - A 5K Holdings Company" />
+        <img src="logo/logo-header-white.svg" alt="5K Specialty Systems - A 5K Holdings Company" />
         <button class="menu-btn" id="menu-x" aria-label="Close menu">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
         </button>
@@ -949,8 +949,7 @@
     <div class="wrap footer-inner">
       <div class="footer-top reveal">
         <div>
-          <div class="logo"><img src="logo/logo-white.png" alt="5K Specialty Systems" /></div>
-          <p class="tag">A 5K Holdings Company</p>
+          <div class="logo footer-logo"><img src="logo/logo-footer-white.svg" alt="5K Specialty Systems - A 5K Holdings Company" /></div>
         </div>
         <nav class="footer-nav">
           <a href="#about">About</a>
